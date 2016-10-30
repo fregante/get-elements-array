@@ -1,6 +1,6 @@
 {
   "name": "get-elements-array",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Array of elements from selector, Array-like objects and single elements",
   "license": "MIT",
   "repository": "bfred-it/get-elements-array",
