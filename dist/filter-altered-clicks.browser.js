@@ -1,2 +1,0 @@
-/*! npm.im/filter-altered-clicks */
-var filterAlteredClicks=function(){"use strict";function e(e){return e?("string"==typeof e&&(e=document.querySelectorAll(e)),e.nodeType===Node.ELEMENT_NODE?[e]:Array.prototype.slice.call(e)):[]}return e}();

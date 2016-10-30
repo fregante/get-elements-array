@@ -1,2 +1,0 @@
-/*! npm.im/get-elements-array */
-var getElementsArray=function(){"use strict";function e(e){return e.location&&e.document&&e.alert&&e.setInterval}function t(t){return t?("string"==typeof t&&(t=document.querySelectorAll(t)),"length"in t&&t.nodeType!==Node.ELEMENT_NODE&&!e(t)?Array.apply(null,t):[t]):[]}return t}();
