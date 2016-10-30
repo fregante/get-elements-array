@@ -12,22 +12,49 @@
   [link-travis]: https://travis-ci.org/bfred-it/get-elements-array
   [link-npm]: https://www.npmjs.com/package/get-elements-array
 
-Similar to how jQuery works and perfect to parse the "elements" parameter of your module.
+The purpose of this module is to simplify the interpretation of an "elements" parameter in your own functions/modules, kinda like jQuery does.
 
 ## Usage
 
-`getElements()` accepts:
+`getElements()` **always returns a plain Array** of elements with many types of input:
 
-- a selector string like `getElements('.article img')`
-- a single DOM element, like `getElements(document.body)`
-- a collection of elements, like `getElements(document.body.children)`
-- an array of elements, like `getElements([document.body, document.head])`
-- an empty collection or null parameter, like `getElements(undefined)`
-- `document` or `window`, like `getElements(document)`
+```js
+// a selector string:
+elementsArray = getElements('.article img');
+// => [<img>, <img>, <img>]
+```
 
-`getElements()` always returns a plain Array of elements, empty if no elements are found.
+```js
+// a single DOM element:
+elementsArray = getElements(document.body);
+// => [document.body]
+```
 
-**Note:** it does not actually verify that the resulting array contains only elements. The purpose of this module is to simplify the interpretation of an "elements" parameter and, if needed, you can use a `isElement` filter on the now-easy-to-use-array:
+```js
+// a collection of elements:
+elementsArray = getElements(document.body.children);
+// => [<h1>, <p>, ...]
+```
+
+```js
+// an array of elements:
+elementsArray = getElements([document.body, document.head]);
+// => [document.body, document.head]
+```
+
+```js
+// an empty collection or null parameter:
+elementsArray = getElements(undefined);
+// => []
+```
+
+```js
+// `document` or `window:
+elementsArray = getElements(document);
+// => [document]
+```
+
+**Note:** it does not verify that the resulting array contains **only** elements. If needed, you can use a filter on the _now-easy-to-use_ array:
 
 ```js
 const getElements = require('get-elements-array');
