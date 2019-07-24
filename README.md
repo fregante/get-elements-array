@@ -6,10 +6,10 @@
 [![Travis build status][badge-travis]][link-travis]
 [![npm version][badge-version]][link-npm]
 
-  [badge-gzip]: https://badges.herokuapp.com/size/github/bfred-it/get-elements-array/master/dist/get-elements-array.browser.js?gzip=true&label=gzipped%20size
-  [badge-travis]: https://api.travis-ci.org/bfred-it/get-elements-array.svg
+  [badge-gzip]: https://badges.herokuapp.com/size/github/fregante/get-elements-array/master/dist/get-elements-array.browser.js?gzip=true&label=gzipped%20size
+  [badge-travis]: https://api.travis-ci.org/fregante/get-elements-array.svg
   [badge-version]: https://img.shields.io/npm/v/get-elements-array.svg
-  [link-travis]: https://travis-ci.org/bfred-it/get-elements-array
+  [link-travis]: https://travis-ci.org/fregante/get-elements-array
   [link-npm]: https://www.npmjs.com/package/get-elements-array
 
 The purpose of this module is to simplify the interpretation of an "elements" parameter in your own functions/modules, kinda like jQuery does.
@@ -90,8 +90,8 @@ None!
 
 ## Related
 
-* [on-off](https://github.com/bfred-it/on-off/): Add and remove multiple events on multiple elements in <1KB
+* [on-off](https://github.com/fregante/on-off/): Add and remove multiple events on multiple elements in <1KB
 
 ## License
 
-MIT © [Federico Brigante](http://twitter.com/bfred_it)
+MIT © [Federico Brigante](https://bfred.it)

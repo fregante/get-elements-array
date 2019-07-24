@@ -2,47 +2,47 @@
   "name": "get-elements-array",
   "version": "1.0.1",
   "description": "Array of elements from selector, Array-like objects and single elements",
-  "license": "MIT",
-  "repository": "bfred-it/get-elements-array",
-  "author": "Federico Brigante <github@bfred.it> (bfred.it)",
   "keywords": [
+    "array",
+    "browser",
+    "collection",
     "dom",
     "elements",
-    "array",
-    "queryselectorall",
-    "qsa",
     "list",
     "parameter",
-    "collection",
-    "browser"
+    "qsa",
+    "queryselectorall"
   ],
+  "repository": "fregante/get-elements-array",
+  "license": "MIT",
+  "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
   "files": [
     "dist"
   ],
   "main": "dist/get-elements-array.common-js.js",
   "module": "dist/get-elements-array.es-modules.js",
   "scripts": {
-    "build:js": "bfred-npm-bundler get-elements-array getElements",
     "build": "npm-run-all --silent jsfix build:*",
+    "build:js": "bfred-npm-bundler get-elements-array getElements",
     "jsfix": "xo --fix",
-    "watch:build": "onchange 'index.js' --initial -- npm run build -- --continue-on-error",
-    "watch": "npm-run-all --parallel --silent watch:*",
     "prepublish": "npm run build",
-    "test": "xo; npm run build"
+    "test": "xo; npm run build",
+    "watch": "npm-run-all --parallel --silent watch:*",
+    "watch:build": "onchange 'index.js' --initial -- npm run build -- --continue-on-error"
+  },
+  "xo": {
+    "env": [
+      "browser"
+    ],
+    "esnext": true,
+    "rules": {
+      "no-use-extend-native/no-use-extend-native": 0
+    }
   },
   "devDependencies": {
     "bfred-npm-bundler": "^7.1.2",
     "npm-run-all": "^3.1.1",
     "onchange": "^3.0.2",
     "xo": "^0.17.0"
-  },
-  "xo": {
-    "esnext": true,
-    "env": [
-      "browser"
-    ],
-    "rules": {
-      "no-use-extend-native/no-use-extend-native": 0
-    }
   }
 }
